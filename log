@@ -188,3 +188,9 @@ exercises.c:95:3: error: ‘Valor’ undeclared (first use in this function); di
 exercises.c:95:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 357783e
+Mon 15 Aug 2022 03:10:23 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+7fffa2a
