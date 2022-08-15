@@ -318,3 +318,13 @@ exercises.c:115:16: error: ‘Vector’ has no member named ‘amp’
 cc1: all warnings being treated as errors
 Compilation failed
 021f8f2
+Mon 15 Aug 2022 03:55:49 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:20: error: ‘Vector’ has no member named ‘amp’
+  115 |   for (i = 0; i < b->amp; i++){
+      |                    ^~
+Compilation failed
+9d6b99f
