@@ -88,3 +88,16 @@ exercises.c:68:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 2dd3e7e
+Mon 15 Aug 2022 02:11:10 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/string.h:519,
+                 from test.c:3:
+In function ‘strcpy’,
+    inlined from ‘crearPersona’ at exercises.c:64:3:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:79:10: error: ‘__builtin___strcpy_chk’ offset 30 is out of the bounds [0, 8] [-Werror=array-bounds]
+   79 |   return __builtin___strcpy_chk (__dest, __src, __glibc_objsize (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fbbd028
