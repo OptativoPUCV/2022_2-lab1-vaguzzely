@@ -290,3 +290,17 @@ exercises.c:115:26: error: expected ‘;’ before ‘)’ token
 exercises.c:115:26: error: expected statement before ‘)’ token
 Compilation failed
 fcbe898
+Mon 15 Aug 2022 03:54:18 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:3: error: statement with no effect [-Werror=unused-value]
+  115 |   for (i; i < b->amp; i++)
+      |   ^~~
+exercises.c:115:16: error: ‘Vector’ has no member named ‘amp’
+  115 |   for (i; i < b->amp; i++)
+      |                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+f6f40bd
