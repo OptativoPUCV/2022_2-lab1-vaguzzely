@@ -328,3 +328,17 @@ exercises.c:115:20: error: ‘Vector’ has no member named ‘amp’
       |                    ^~
 Compilation failed
 9d6b99f
+Mon 15 Aug 2022 03:56:39 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:8: error: ‘i’ undeclared (first use in this function)
+  114 |   for (i = 0; i < b->amp; i++){
+      |        ^
+exercises.c:114:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:114:20: error: ‘Vector’ has no member named ‘amp’
+  114 |   for (i = 0; i < b->amp; i++){
+      |                    ^~
+Compilation failed
+2a2cf9a
