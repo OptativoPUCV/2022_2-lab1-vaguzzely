@@ -71,3 +71,20 @@ exercises.c:67:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1d8b718
+Mon 15 Aug 2022 02:10:50 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:29: error: expected ‘;’ before ‘sujeto’
+   64 |   strcpy(sujeto -> rut, rut)
+      |                             ^
+      |                             ;
+   65 |   sujeto -> edad = edad
+      |   ~~~~~~                     
+exercises.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2dd3e7e
