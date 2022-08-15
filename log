@@ -247,3 +247,28 @@ test.c:244:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 6aba60f
+Mon 15 Aug 2022 03:53:54 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:3: error: expected ‘,’ or ‘;’ before ‘void’
+  115 |   void sumaV(Vector * a, Vector * b, Vector * c) {
+      |   ^~~~
+test.c:244:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  244 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:266:1: error: expected declaration or statement at end of input
+  266 | }
+      | ^
+In file included from test.c:5:
+exercises.c:114:7: error: unused variable ‘i’ [-Werror=unused-variable]
+  114 |   int i = 0
+      |       ^
+At top level:
+test.c:244:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  244 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cecec90
