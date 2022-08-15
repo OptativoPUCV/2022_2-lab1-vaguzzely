@@ -82,7 +82,9 @@ Vector * crearVector(int n) {
   Vector * vector;
   vector = (Vector *)malloc(sizeof(n));
   vector -> datos = (int*) calloc(n,sizeof(int));
- 
+  vector -> capacidad = n;
+  
+  return NULL;
 }
 
 /*
