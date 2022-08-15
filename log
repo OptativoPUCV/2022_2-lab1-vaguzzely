@@ -166,3 +166,13 @@ exercises.c:94:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 e298f39
+Mon 15 Aug 2022 03:09:19 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:9: error: invalid type argument of ‘->’ (have ‘int’)
+   95 |   valor -> datos[i] = valor;
+      |         ^~
+Compilation failed
+4140670
