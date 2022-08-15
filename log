@@ -272,3 +272,21 @@ test.c:244:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 cecec90
+Mon 15 Aug 2022 03:54:03 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:3: error: expected ‘,’ or ‘;’ before ‘for’
+  115 |   for (i; i < b->amp; i++)
+      |   ^~~
+exercises.c:115:16: error: ‘Vector’ has no member named ‘amp’
+  115 |   for (i; i < b->amp; i++)
+      |                ^~
+exercises.c:115:26: error: expected ‘;’ before ‘)’ token
+  115 |   for (i; i < b->amp; i++)
+      |                          ^
+      |                          ;
+exercises.c:115:26: error: expected statement before ‘)’ token
+Compilation failed
+fcbe898
