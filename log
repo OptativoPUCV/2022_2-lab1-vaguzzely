@@ -53,3 +53,21 @@ Mon 15 Aug 2022 02:08:30 AM UTC:
  tests:  2|5
 total_score: 20/70
 2884867
+Mon 15 Aug 2022 02:09:43 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:29: error: expected ‘;’ before ‘return’
+   64 |   strcpy(sujeto -> rut, rut)
+      |                             ^
+      |                             ;
+   65 | 
+   66 |   return sujeto;
+      |   ~~~~~~                     
+exercises.c:67:1: error: control reaches end of non-void function [-Werror=return-type]
+   67 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1d8b718
