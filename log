@@ -204,3 +204,15 @@ exercises.c:95:8: error: invalid type argument of ‘->’ (have ‘int’)
       |        ^~
 Compilation failed
 04a536c
+Mon 15 Aug 2022 03:16:17 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:3: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   95 |   vector ->datos[i] = valor;
+      |   ^~~~~~
+      |   Vector
+exercises.c:95:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+39c03bb
