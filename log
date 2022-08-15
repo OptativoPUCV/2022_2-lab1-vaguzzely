@@ -149,3 +149,20 @@ Mon 15 Aug 2022 03:00:09 AM UTC:
  tests:  4|3
 total_score: 40/70
 8cf8f65
+Mon 15 Aug 2022 03:08:55 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:9: error: invalid type argument of ‘->’ (have ‘int’)
+   95 |   valor -> datos[i] = valor;
+      |         ^~
+exercises.c:96:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   96 |   return valor;
+      |          ^~~~~
+exercises.c:94:6: note: declared here
+   94 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e298f39
