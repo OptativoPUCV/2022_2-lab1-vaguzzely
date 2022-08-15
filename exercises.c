@@ -12,7 +12,7 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-    *c = a+b;
+    *c = a + b;
 }
 
 /*
@@ -37,6 +37,10 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
+  int numParaSuma;
+  numParaSuma = m - n;
+  
+  
   
 
 }
@@ -91,6 +95,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
+  
    return 0;
 }
 

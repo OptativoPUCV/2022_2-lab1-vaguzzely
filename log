@@ -4,3 +4,14 @@ Fri 12 Aug 2022 01:06:53 PM UTC:
  tests:  1|6
 total_score: 10/70
 4a799d9
+Mon 15 Aug 2022 01:32:06 AM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:7: error: variable ‘numParaSuma’ set but not used [-Werror=unused-but-set-variable]
+   40 |   int numParaSuma;
+      |       ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+977c8db
